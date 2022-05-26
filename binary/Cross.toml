@@ -1,0 +1,5 @@
+# this lets us export the parent directory defined in config.toml
+[build.env]
+volumes = [
+    "PROJECT_DIR",
+]

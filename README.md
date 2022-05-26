@@ -2,6 +2,20 @@
 
 A simple example of using `Cross.toml` with volumes to ensure the project directory is mounted.
 
+We assume a project directory analogous to, where we have a directory containing numerous separate projects as local dependencies:
+
+```text
+project/
+    lib1/
+        Cargo.toml
+    lib2/
+        Cargo.toml
+    lib3/
+        Cargo.toml
+    bin/
+        Cargo.toml
+```
+
 First, we create a library and a binary that relies on that library:
 
 **Cargo.toml**
